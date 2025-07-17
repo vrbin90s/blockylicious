@@ -1,55 +1,61 @@
-=== Curvy ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.7
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+=== Blockylicious ===
+Contributors: Jonas Vrbin
+Tags: block, gutenberg, custom blocks, react, scss, wordpress
+Tested up to: 6.7
+Requires at least: 6.0
+Stable tag: 0.1.0
+Requires PHP: 7.4
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Example block scaffolded with Create Block tool.
+A custom Gutenberg block library plugin built with React, SCSS, and PHP using WordPress's official block development tools.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+**Blockylicious** is a modular and developer-friendly WordPress plugin featuring a library of custom Gutenberg blocks.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+It was created following modern WordPress standards using `@wordpress/scripts` — no Vite or Webpack configuration required. All blocks are styled with SCSS and built with React.
+
+Included blocks:
+- **Curvy**: Custom shape divider block
+- **Clicky Group** and **Clicky Button**: Dynamic nested buttons
+- **Piccy Image** and **Piccy Gallery**: Image-based blocks with custom alignment and styling
+
+Development is inspired by modern best practices covered in the [Udemy Gutenberg block development course](https://www.udemy.com/course/wordpress-gutenberg-block-development/).
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/curvy` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
+1. Clone or upload the plugin folder to `/wp-content/plugins/blockylicious`.
+2. Run `npm install` to install dependencies.
+3. Run `npm run build` to compile production assets (or `npm start` for development).
+4. Activate the plugin via the WordPress **Plugins** screen.
+5. Use the new blocks directly in the Gutenberg editor.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Do I need Gutenberg installed separately? =  
+No — Gutenberg is part of WordPress core since version 5.0.
 
-An answer to that question.
+= Is this plugin dynamic or static? =  
+It includes both. Blocks like `Clicky Group` use `render.php` for server-side rendering, while others like `Curvy` are purely static.
 
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+= Can I extend the blocks? =  
+Yes — the plugin follows modular structure and uses `block.json` registration, allowing easy overrides and extensions.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Custom blocks in the editor
+2. Live rendering of Piccy Gallery block
 
 == Changelog ==
 
 = 0.1.0 =
-* Release
+* Initial release
+* Added Curvy, Piccy, and Clicky block families
 
-== Arbitrary section ==
+== Credits ==
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+Based on concepts taught in:
+[WordPress Gutenberg Block Development with React JS and PHP](https://www.udemy.com/course/wordpress-gutenberg-block-development/)
+
+GitHub Repository: https://github.com/vrbin90s/blockylicious
