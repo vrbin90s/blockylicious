@@ -21,6 +21,8 @@ Included blocks:
 - **Clicky Group** and **Clicky Button**: Dynamic nested buttons
 - **Piccy Image** and **Piccy Gallery**: Image-based blocks with custom alignment and styling
 
+== Credits ==
+
 Development is inspired by modern best practices covered in the [Udemy Gutenberg block development course](https://www.udemy.com/course/wordpress-gutenberg-block-development/).
 
 == Installation ==
