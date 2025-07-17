@@ -1,5 +1,5 @@
 === Blockylicious ===
-Contributors: Jonas Vrbin
+Contributors: Kęstutis Šebelskis (@vrbin90s)
 Tags: block, gutenberg, custom blocks, react, scss, wordpress
 Tested up to: 6.7
 Requires at least: 6.0
